@@ -10,8 +10,8 @@
 
 ; HTML Elements
 (tag_name) @tag
-((tag_name) @module
- (#match? @module ":"))
+((tag_name) @tag.attribute
+ (#match? @tag.attribute ":"))
 
 (attribute_name) @attribute
 

@@ -9,4 +9,4 @@ repository = "https://github.com/tartarughina/zed-jsp"
 [grammars.jsp]
 # repository = "https://github.com/tartarughina/tree-sitter-jsp"
 repository = "file:///Users/rstrina/develop/tree-sitter-jsp"
-commit = "3fb865336e6feb5b26ccf99a2128894626981313"
+commit = "39d0021b9127ce51cc13a5f7e780c00d27795d03"
