@@ -7,6 +7,5 @@ authors = ["Riccardo Strina <riccardo.strina@icloud.com>"]
 repository = "https://github.com/tartarughina/zed-jsp"
 
 [grammars.jsp]
-# repository = "https://github.com/tartarughina/tree-sitter-jsp"
-repository = "file:///Users/rstrina/develop/tree-sitter-jsp"
-commit = "39d0021b9127ce51cc13a5f7e780c00d27795d03"
+repository = "https://github.com/tartarughina/tree-sitter-jsp"
+commit = "527dff4962bf47a9bad0814d4db172e6aadb9090"

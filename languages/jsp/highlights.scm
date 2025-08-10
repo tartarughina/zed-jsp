@@ -2,7 +2,7 @@
 (jsp_directive) @property
 (jsp_directive_name) @keyword
 
-; Other JSP elements gets the color from the injected language
+; Other JSP elements get the color from the injected language
 
 ; Comments
 (comment) @comment
@@ -10,8 +10,8 @@
 
 ; HTML Elements
 (tag_name) @tag
-((tag_name) @tag.attribute
- (#match? @tag.attribute ":"))
+((tag_name) @keyword
+ (#match? @keyword ":"))
 
 (attribute_name) @attribute
 

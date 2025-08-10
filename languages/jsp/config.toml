@@ -1,4 +1,4 @@
-name = "jsp"
+name = "JSP"
 grammar = "jsp"
 path_suffixes = ["jsp"]
 
