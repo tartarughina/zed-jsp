@@ -1,8 +1,8 @@
 name = "JSP"
 grammar = "jsp"
-path_suffixes = ["jsp"]
+path_suffixes = ["jsp", "jspf", "tag"]
 
-block_comment = { start = "<!--", prefix = "", end = "-->", tab_size = 0 }
+block_comment = { start = "<%-- ", prefix = "", end = " --%>", tab_size = 0 }
 
 autoclose_before = ">})\"'"
 brackets = [
@@ -13,15 +13,16 @@ brackets = [
         "comment",
         "string",
     ] },
+    { start = "'", end = "'", close = true, newline = false, not_in = [
+        "comment",
+        "string",
+    ] },
     { start = "<", end = ">", close = false, newline = true, not_in = [
         "comment",
         "string",
     ] },
-    { start = "!--", end = " --", close = true, newline = false, not_in = [
-        "comment",
-        "string",
-    ] },
+    { start = "${", end = "}", close = true, newline = false },
+    { start = "#{", end = "}", close = true, newline = false },
 ]
 
-# Add word characters for better selection
-word_characters = ["-", "_"]
+word_characters = ["-", "_", ":"]

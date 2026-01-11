@@ -20,3 +20,4 @@
 
 ; Fold comments
 (comment) @fold
+(jsp_comment) @fold

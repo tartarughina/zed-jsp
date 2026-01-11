@@ -10,11 +10,14 @@
 ((jsp_declaration) @injection.content
  (#set! injection.language "java"))
 
-; Expression Language (EL) injection
-; EL is a simple expression language, we'll inject as Java for basic syntax highlighting
-; Individual editors can override this with EL-specific parsers if available
+; Expression Language (EL) injection - immediate evaluation ${...}
 ((el_expression) @injection.content
- (#set! injection.language "java")
+ (#set! injection.language "el")
+ (#set! injection.include-children))
+
+; Deferred Expression Language injection - deferred evaluation #{...}
+((deferred_el_expression) @injection.content
+ (#set! injection.language "el")
  (#set! injection.include-children))
 
 (style_element
@@ -23,4 +26,4 @@
 
 (script_element
     (raw_text) @injection.content
-    (#set! injection.language "js"))
+    (#set! injection.language "javascript"))

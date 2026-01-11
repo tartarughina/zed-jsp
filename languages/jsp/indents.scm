@@ -18,6 +18,7 @@
 ;   (start_tag) @indent
 ;   (end_tag) @outdent) @indent
 
-; JSP scriptlets and expressions
+; JSP scriptlets, expressions, and declarations
 (jsp_scriptlet) @indent
 (jsp_expression) @indent
+(jsp_declaration) @indent

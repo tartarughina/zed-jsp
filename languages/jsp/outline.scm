@@ -1,7 +1,7 @@
 ; JSP Directives in outline
 (jsp_directive
   (jsp_directive_name) @context
-  (#match? @context "^(page|include|taglib)$")) @item
+  (#match? @context "^(page|include|taglib|attribute|variable|tag)$")) @item
 
 ; HTML elements with IDs or classes
 (element
