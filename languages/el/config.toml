@@ -1,0 +1,10 @@
+name = "EL"
+grammar = "el"
+path_suffixes = []
+brackets = [
+    { start = "(", end = ")", close = true, newline = false },
+    { start = "[", end = "]", close = true, newline = false },
+    { start = "'", end = "'", close = true, newline = false },
+    { start = "\"", end = "\"", close = true, newline = false },
+]
+word_characters = ["_"]
