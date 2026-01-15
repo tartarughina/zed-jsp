@@ -1,26 +1,25 @@
 ; JSP Directives
-(jsp_directive) @property
+(jsp_directive) @keyword.directive
 (jsp_directive_name) @keyword
 
 ; DOCTYPE
-(doctype) @tag
+(doctype) @tag.doctype
 
 ; Comments
 (comment) @comment
 (jsp_comment) @comment
 
 ; HTML Elements
-; Namespaced tags (JSTL, custom taglibs) - use namespace color
-((tag_name) @namespace
- (#match? @namespace ":"))
+(tag_name) @tag
 
-; Regular HTML tags
-((tag_name) @tag
- (#not-match? @tag ":"))
+; JSP Custom Tags (taglib:method format)
+(jsp_tag_prefix) @namespace
+(jsp_tag_local_name) @constant
 
 (erroneous_end_tag) @comment.error
+(erroneous_jsp_end_tag) @comment.error
 
-(attribute_name) @attribute
+(attribute_name) @tag.attribute
 
 (attribute_value) @string
 (quoted_attribute_value) @string
@@ -35,7 +34,8 @@
   ">"
   "</"
   "/>"
-] @punctuation.delimiter
+  ":"
+] @tag.delimiter
 
 ; Text content
 (text) @text
