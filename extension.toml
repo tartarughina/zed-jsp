@@ -1,14 +1,14 @@
 id = "jsp"
 name = "JSP"
 description = "JSP support."
-version = "0.2.0"
+version = "0.3.0"
 schema_version = 1
 authors = ["Riccardo Strina <riccardo.strina@icloud.com>"]
 repository = "https://github.com/tartarughina/zed-jsp"
 
 [grammars.jsp]
 repository = "https://github.com/tartarughina/tree-sitter-jsp"
-commit = "6d2b70595a20e15f95666d4162da36caf5881795"
+commit = "deb5e3a4f14bf9ad594951c95b5ed598322c14f0"
 
 [grammars.el]
 repository = "https://github.com/tartarughina/tree-sitter-el"

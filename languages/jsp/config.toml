@@ -17,7 +17,7 @@ brackets = [
         "comment",
         "string",
     ] },
-    { start = "<", end = ">", close = false, newline = true, not_in = [
+    { start = "<", end = ">", close = true, newline = true, not_in = [
         "comment",
         "string",
     ] },
