@@ -3,20 +3,10 @@
   (start_tag) @indent
   (end_tag) @outdent) @indent
 
-; Indent inside template elements
-; (template_element
-;   (start_tag) @indent
-;   (end_tag) @outdent) @indent
-
-; ; Indent inside script elements
-; (script_element
-;   (start_tag) @indent
-;   (end_tag) @outdent) @indent
-
-; ; Indent inside style elements
-; (style_element
-;   (start_tag) @indent
-;   (end_tag) @outdent) @indent
+; Indent inside JSP elements
+(jsp_element
+  (jsp_start_tag) @indent
+  (jsp_end_tag) @outdent) @indent
 
 ; JSP scriptlets, expressions, and declarations
 (jsp_scriptlet) @indent

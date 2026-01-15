@@ -3,6 +3,11 @@
   (start_tag) @fold.start
   (end_tag) @fold.end) @fold
 
+; Fold JSP elements
+(jsp_element
+  (jsp_start_tag) @fold.start
+  (jsp_end_tag) @fold.end) @fold
+
 ; Fold template elements
 (template_element
   (start_tag) @fold.start
