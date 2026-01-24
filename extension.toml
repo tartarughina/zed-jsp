@@ -1,7 +1,7 @@
 id = "jsp"
 name = "JSP"
 description = "JSP support."
-version = "0.3.1"
+version = "0.3.2"
 schema_version = 1
 authors = ["Riccardo Strina <riccardo.strina@icloud.com>"]
 repository = "https://github.com/tartarughina/zed-jsp"
@@ -12,4 +12,4 @@ commit = "b9fac3b883e2dca0ffc6a4e68196e81363465540"
 
 [grammars.el]
 repository = "https://github.com/tartarughina/tree-sitter-el"
-commit = "0a710ca2640d11b7d06c9eb188d6c581f1303ef9"
+commit = "b160fa71bad3ca94f0fdc91f6101f1c6c6812b44"

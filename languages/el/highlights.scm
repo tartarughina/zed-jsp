@@ -10,6 +10,13 @@
 (method_call
   method: (identifier) @function)
 
+; JSTL function calls (fn:length, etc.)
+(function_call
+  namespace: (identifier) @module
+  function: (identifier) @function)
+
+(function_call ":" @punctuation.delimiter)
+
 ; Member/property access
 (member_expression
   property: (identifier) @property)
