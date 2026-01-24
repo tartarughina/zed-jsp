@@ -13,8 +13,10 @@
 (tag_name) @tag
 
 ; JSP Custom Tags (taglib:method format)
-(jsp_tag_prefix) @namespace
-(jsp_tag_local_name) @constant
+(jsp_tag_name
+  (jsp_tag_prefix) @module
+  ":" @punctuation.delimiter
+  (jsp_tag_local_name) @constant)
 
 (erroneous_end_tag) @comment.error
 (erroneous_jsp_end_tag) @comment.error
@@ -34,7 +36,6 @@
   ">"
   "</"
   "/>"
-  ":"
 ] @tag.delimiter
 
 ; Text content
